@@ -1,0 +1,30 @@
+.App {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+  /* background: linear-gradient(to right, rgb(120, 118, 118), rgb(119, 100, 100)); */
+  /* background: linear-gradient(to bottom, rgb(3, 99, 125),rgb(4, 128, 162),rgb(4, 135, 172)); */
+
+
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+ul{
+    padding: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}

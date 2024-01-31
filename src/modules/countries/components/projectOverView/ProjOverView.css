@@ -1,0 +1,215 @@
+.body {
+  background-image: url("../../../../projectOverViewPic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.asbuilt_div {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* margin: 0 1rem; */
+/* box-shadow: 2px 2px 3px black; */
+/* background: linear-gradient(to right,rgb(4, 213, 255),rgb(164, 255, 255)) */
+/* background: linear-gradient(to right, #bde3fd, #73c3fc); */
+/* background: linear-gradient(to right, #9cf3d9, #ddfff1); */
+
+
+}
+
+.asbuilt_div>:first-child {
+  box-sizing: border-box;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 1rem 0; */
+  border-bottom: 2px solid rgb(33, 38, 80);
+  /* margin-bottom: 1.5rem; */
+  padding: 0.5rem 5rem;
+  color: rgb(7, 61, 128);
+}
+
+.asbuilt_div>:first-child>:first-child {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.asbuilt_div>:first-child>:last-child {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.asbuilt_div>:last-child {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 70vh;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.asbuilt_div>:last-child>:first-child {
+  border-right: 3px solid black;
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1rem 0.5rem 0 1rem;
+}
+
+.asbuilt_div>:last-child>:first-child>span {
+  letter-spacing: 0.1rem;
+}
+
+.asbuilt_div>:last-child>:first-child>ul {
+  padding: 0.5rem 0;
+  margin: 0;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.asbuilt_div>:last-child>:first-child>ul>a {
+  padding: 0.4rem 0.8rem;
+  position: relative;
+  letter-spacing: 0.050rem;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* .asbuilt_div>:last-child>:first-child>ul a:hover {
+  color: red;
+} */
+
+
+.module_div , .sld_div {
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  height: auto;
+  left: 100%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px black;
+  /* background: linear-gradient(to right, rgb(233, 103, 103), white); */
+  /* background: linear-gradient(to right,rgb(4, 213, 255),rgb(164, 255, 255)); */
+  /* background: linear-gradient(to right, #bde3fd, #73c3fc);
+background: linear-gradient(to right, #9cf3d9, #ddfff1); */
+background: linear-gradient(to right, #e8f8f4, #c6d5cf); 
+
+
+  transition: width .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+
+
+
+.asbuilt_div>:last-child>:last-child {
+  box-sizing: border-box;
+  width: 77%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.5rem;
+
+}
+
+.asbuilt_div>:last-child>:last-child>div {
+  height: 300px;
+  width: 220px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+}
+
+.asbuilt_div>:last-child>:last-child>div>div {
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 4px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+
+
+}
+
+.asbuilt_div>:last-child>:last-child>div>div>:first-child{
+  background: linear-gradient(to bottom,rgb(131, 131, 255),rgb(66, 227, 255));
+  background: linear-gradient(to right, #e8f8f4, #c6d5cf);
+  /* background: linear-gradient(to right, #bde3fd, #73c3fc); */
+
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 1.7;
+
+}
+/* .asbuilt_div>:last-child>:last-child>div>div>:first-child>:first-child{
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+.asbuilt_div>:last-child>:last-child>div>div>:first-child>:last-child{
+  font-size: 1.2rem;
+  text-align: center;
+  
+} */
+
+.asbuilt_div>:last-child>:last-child>div>div>:last-child {
+  background-color: rgb(248, 95, 65);
+cursor: pointer;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  transition: .5s all;
+}
+.asbuilt_div>:last-child>:last-child>div>div>:last-child:hover{
+  background-color: rgb(255, 46, 4) !important;
+  
+}
+
+.asbuilt_div>:last-child>:last-child>div>:last-child>link {
+  color: #05c059;
+}
+
+
+#excel_button:hover{
+  background-color:#03db64 !important;
+}
+/* .asbuilt_div>:last-child>:last-child>div>div{
+  top: 10%;
+  width: 100%;
+  background:rgb(233, 112, 112);
+} */

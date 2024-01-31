@@ -1,0 +1,24 @@
+.small-card-style {
+  /* background-color: #edeaea; */
+  /* background: linear-gradient(to right,rgb(95, 225, 225),rgb(182, 228, 238)); */
+  /* background: linear-gradient(to right,rgb(10, 150, 52),rgb(170, 221, 173)); */
+  /* background: linear-gradient(to right,rgb(74, 157, 99),rgb(189, 236, 192)); */
+  background: linear-gradient(to right, #bde3fd, #73c3fc);
+
+  border-radius: 5px;
+  /*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  width: 80%;
+  height: 100%;
+  /* -webkit-box-shadow: 16px 15px 5px 0px rgba(135, 135, 97, 0.7);
+  -moz-box-shadow: 16px 15px 5px 0px rgba(135, 135, 97, 0.7);
+  box-shadow: 16px 15px 5px 0px rgba(135, 135, 97, 0.7); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  /* color: rgb(23, 167, 210); */
+}

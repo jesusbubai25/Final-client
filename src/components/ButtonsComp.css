@@ -1,0 +1,17 @@
+.button-primary {
+  background-color: #ed7d31;
+  color: black;
+  font-weight: bolder;
+  margin: 5px;
+  height: 7vh;
+  width: 7vw;
+}
+
+.button-secondary {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  margin: 5px;
+  height: 7vh;
+  width: 7vw;
+}

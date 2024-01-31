@@ -1,0 +1,16 @@
+/* th,
+td {
+  border: 2px solid #ed7d31;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #edeaea;
+  font-family: cursive;
+} */
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

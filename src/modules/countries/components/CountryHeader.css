@@ -1,0 +1,47 @@
+.header {
+  background-color: #122b4f;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header .logo {
+  width: "15vw";
+  height: "10vh";
+  overflow: "hidden";
+  /* padding-left: 1rem; */
+  /* margin-left: "10px"; */
+}
+
+.header .title {
+  width: 60vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 110%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .title .dropdown {
+  width: 10vw;
+
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: #122b4f;
+  border-radius: 5px;
+}
+
+.header .logout {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-right: 1rem; */
+}

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* @font-face {
+  font-family: 'Cambria';
+  src: local('Cambria'), url('./fonts/Cambria.ttf') format('truetype');
+  // Add additional font formats (e.g., woff, woff2) if needed 
+} */
+
+/* body {
+  font-family: 'Cambria', sans-serif;
+} */

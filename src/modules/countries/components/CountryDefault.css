@@ -1,0 +1,17 @@
+.country-header {
+  height: 10vh;
+  width: 100vw;
+  margin-bottom: 10px;
+}
+
+.country-header-no-margin {
+  height: 10vh;
+  width: 100vw;
+}
+
+.country-body {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+}

@@ -1,0 +1,28 @@
+.links_div {
+    box-sizing: border-box;
+    display: flex;
+    background-color: aliceblue;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 14px;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 1px 2px 2px black;
+    font-size: 0.7rem;
+    z-index: 5;
+    height: 0;
+    overflow: hidden;
+    transition: .2s ease; 
+
+}
+
+.links_div a {
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.links_div a:hover {
+    color: rgb(236, 33, 15);
+    color: rgb(240, 65, 17);
+    scale: 1.010;
+}

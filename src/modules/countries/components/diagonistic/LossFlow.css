@@ -1,0 +1,366 @@
+.smb_box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    background: linear-gradient(to right, rgb(86, 198, 45), rgb(136, 192, 201));
+    margin: auto;
+    position: relative;
+    border-radius: 14px;
+}
+
+.solar_box {
+    display: flex;
+    gap: 3rem;
+    /* position: relative; */
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+    color: rgb(50, 169, 32);
+    color: rgb(22, 154, 2);
+}
+
+.solar_pannel_box {
+    position: relative;
+}
+
+.solar_pannel_box>div {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    /* background-color: rgb(67, 176, 239); */
+    /* background: linear-gradient(to right, #2E3192 , #1BFFFF); */
+    background: linear-gradient(to right, #19196c, #2B3B92, #3859AC, #4677C7);
+
+
+    box-shadow: 1px 1px 2px black;
+}
+
+.solar_pannel_box .solar_pannel_item1 {
+    position: relative;
+}
+
+.solar_pannel_box .solar_pannel_item2 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.solar_pannel_box .solar_pannel_item3 {
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: rgb(134, 114, 114);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+
+}
+
+.solar_pannel_item1,
+.solar_pannel_item2,
+.solar_pannel_item3 {
+    /* border: 5px solid red; */
+    animation: blink 1s ease-in-out infinite;
+
+
+    /* background-image: radial-gradient(
+      circle at center,
+      black 0.25rem,
+      transparent 0
+    ), radial-gradient(circle at center, black 0.25rem, transparent 0);
+  background-size: 1.3rem 1.3rem;
+  background-position: 0 0, 0.65rem 0.65rem; */
+
+    /* background-image: radial-gradient(#fff 10%, transparent 11%),
+    radial-gradient(#fff 10%, transparent 11%);
+  background-size: 60px 60px;
+  background-position: 10px 10px, 30px 30px;
+  background-repeat: repeat; */
+
+    background-image: radial-gradient(circle at center,
+            rgb(150, 203, 224) 0.15rem,
+            transparent 0);
+    background-size: 1.2rem 1.2rem;
+    background-repeat: round;
+
+
+}
+
+.animate_div {
+    animation: blink2 .5s infinite;
+
+}
+
+.animate_div2 {
+    animation: blink22 .5s infinite;
+
+}
+
+.animate_cable {
+    animation: blink3 .5s infinite;
+
+}
+
+.y_connector {
+    animation: y_connector .5s infinite;
+
+}
+
+/* .special_animate{
+  
+    animation: s_animate .2s infinite ;
+
+} */
+
+.loss_flow_table td {
+    padding: 0 10px;
+}
+
+.loss_flow_table {}
+
+@keyframes s_animate {
+    /* 50%{
+        right: 100%;
+    } */
+
+}
+
+@keyframes blink {
+    50% {
+        border: 2px solid rgb(67, 176, 239);
+
+    }
+}
+
+@keyframes blink2 {
+    50% {
+        border-left: 5px dashed black;
+
+    }
+}
+
+@keyframes blink22 {
+    50% {
+        border-top: 5px dashed black;
+
+    }
+}
+
+@keyframes blink3 {
+    50% {
+        background-color: red;
+
+    }
+}
+
+@keyframes y_connector {
+    50% {
+        color: black;
+
+    }
+}
+
+
+/* <div style={{display:"flex",gap:"0.5rem",position:"relative"}}>
+                    <div style={{width:"65%",height:"4px",backgroundColor:"rgb(86, 198, 45)",position:"absolute",top:"50%",marginLeft:"19.5px"}}></div>
+                     <div style={{width:"65%",height:"4px",backgroundColor:"rgb(86, 198, 45)",position:"absolute",top:"0",marginLeft:"19.5px"}}></div>  */
+
+
+/* .smb_box .smb_box_item{
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: 800;
+    height: 50px;
+    width: 60px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(to right, rgb(86, 198, 45),rgb(136, 192, 201));
+}
+.solar_pannel_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.solar_pannel_box>div{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(67, 176, 239);
+    box-shadow: 1px 1px 2px  black;
+}
+.solar_pannel_box .solar_pannel_item1{
+    position: relative;
+}
+.solar_pannel_box .solar_pannel_item2{
+    position: absolute;
+    top: 10px;
+     right: 15px; 
+}
+.solar_pannel_box .solar_pannel_item3{
+    position: absolute;
+    top: 20px;
+     right: 25px; 
+     color: rgb(94, 216, 253);
+     color: rgb(27, 84, 227);
+} */
+
+
+/* <div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div>
+
+</div>
+<div className="smb_box">
+
+<div className="smb_box_item">
+<span>SMB 09</span>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",left:"10px",top:"100%"}}></div>
+<div style={{border:"3px dotted rgb(27, 84, 227)",height:"100%",position:"absolute",margin:"auto",top:"100%"}}></div>
+<div style={{width:"5px",backgroundColor:"rgb(86, 198, 45)",height:"50%",position:"absolute",margin:"auto",bottom:"100%"}}></div>
+
+</div>
+<div className="solar_pannel_box">
+<div className="solar_pannel_item1"></div>
+<div className="solar_pannel_item2"></div>
+<div className="solar_pannel_item3"></div>
+
+</div> */

@@ -1,0 +1,13 @@
+.signup-box {
+  height: 80vh;
+  width: 35vw;
+  background-color: rgba(4, 126, 126, 0.97);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+  box-shadow: 50px 50px 17px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ed7d31;
+}

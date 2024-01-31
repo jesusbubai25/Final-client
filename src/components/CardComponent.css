@@ -1,0 +1,8 @@
+.card-container {
+  min-width: 300;
+  background-color: "#edeaea";
+  height: "max-content";
+  margin: "5px 5px 5px 5px";
+  border-style: "solid";
+  border-color: "#ed7d31";
+}

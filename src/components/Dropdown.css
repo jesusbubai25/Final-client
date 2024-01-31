@@ -1,0 +1,45 @@
+.SubHeader {
+    background-color: rgb(228, 228, 224) !important;
+    /* background-color: rgb(245, 245, 237) !important; */
+    cursor: pointer;
+    border-bottom: 3px solid white;
+
+}
+
+.SubHeader>span {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.SubHeader>span>i{
+}
+
+.SubHeader:hover {
+    background-color: rgb(233, 182, 116) !important;
+}
+
+.SubHeader i {
+    /* margin-left: 7rem; */
+}
+
+.last_item{
+    border-bottom: none;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list{
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    /* scrollbar-width: none  !important; */
+    /* scrollbar-width: thin !important; */
+    /* scrollbar-color: red !important; */
+
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+   /* border: 2px solid red; */
+   scrollbar-width: 2px !important;
+}
+.css-mhc70k-MuiGrid-root>.MuiGrid-item{
+    padding-top: 0 !important;
+}
