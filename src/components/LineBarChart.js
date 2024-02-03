@@ -15,7 +15,6 @@ import html2canvas from "html2canvas";
 import { saveAs } from 'file-saver';
 import { CSVLink } from "react-csv";
 import { Button } from "@mui/material";
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 import CustomizeTootip from "./CustomizeTootip";
 import CustomizeLegend from "./CustomizeLegend";
 
@@ -130,7 +129,7 @@ export default function LineBarChart(props) {
           left: 20,
         }}
 
-        plugins={[ChartDataLabels]} options={options}
+         options={options}
       >
         <CartesianGrid stroke="#f5f5f5" />
         <XAxis
