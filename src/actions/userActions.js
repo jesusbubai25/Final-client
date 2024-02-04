@@ -13,8 +13,6 @@ import {
 //     withCredentials: true
 // })
 
-
-
 // axios.create({
 //     baseURL: "http://195.35.21.41:8000",
 //     withCredentials: true

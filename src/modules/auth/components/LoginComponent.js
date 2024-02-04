@@ -29,7 +29,8 @@ const LoginComponent = (props) => {
     else if (!form.userName.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
       toast.error("Enter a valid username")
       return;
-    } else {
+    }
+     else {
       dispatch(userLogin(form))
     }
   };
