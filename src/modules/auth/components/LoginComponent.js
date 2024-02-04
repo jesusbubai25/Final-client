@@ -40,7 +40,7 @@ const LoginComponent = (props) => {
       dispatch({ type: clear_errors })
     }
     if (isLogin) {
-      localStorage.setItem("auth_token",auth_token)
+      // localStorage.setItem("auth_token",auth_token)
       toast.success("Logged In Successfully!")
       dispatch(getUser())
       dispatch({ type: user_login_reset })

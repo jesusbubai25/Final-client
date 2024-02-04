@@ -1,4 +1,4 @@
-import{
+import {
     allow_user_fail,
     allow_user_request,
     allow_user_reset,
@@ -55,27 +55,27 @@ export const user = (state = { user: null }, action) => {
                 loading: true
             };
 
-            case send_otp_sucess:{
-                return{
-                    ...state,
-                    loading:false,
-                    isSendOtp:action.payload
-                }
+        case send_otp_sucess: {
+            return {
+                ...state,
+                loading: false,
+                isSendOtp: action.payload
             }
-            case resend_otp_sucess:{
-                return{
-                    ...state,
-                    loading:false,
-                    isResendOtp:action.payload
-                }
+        }
+        case resend_otp_sucess: {
+            return {
+                ...state,
+                loading: false,
+                isResendOtp: action.payload
             }
-            case verify_otp_sucess:{
-                return{
-                    ...state,
-                    loading:false,
-                    isVerifiedOtp:action.payload
-                }
+        }
+        case verify_otp_sucess: {
+            return {
+                ...state,
+                loading: false,
+                isVerifiedOtp: action.payload
             }
+        }
         case user_signup_sucess:
             return {
                 ...state,
@@ -83,34 +83,34 @@ export const user = (state = { user: null }, action) => {
                 sucess: action.payload
             };
 
-            case user_logout_sucess:
-                return {
-                    ...state,
-                    loading: false,
-                    isLogout:action.payload,
-                };
+        case user_logout_sucess:
+            return {
+                ...state,
+                loading: false,
+                isLogout: action.payload,
+            };
 
-            case get_user_sucess:
-                return{
-                    ...state,
-                    loading:false,
-                    user:action.payload
-                }
+        case get_user_sucess:
+            return {
+                ...state,
+                loading: false,
+                user: action.payload
+            }
 
-            case user_login_sucess:
-                return {
-                    ...state,
-                    loading: false,
-                    user:action.payload?.user,
-                    isLogin:true,
-                    auth_token:action.payload?.auth_token
-                };
+        case user_login_sucess:
+            return {
+                ...state,
+                loading: false,
+                user: action.payload?.user,
+                isLogin: true,
+                auth_token: action.payload?.auth_token
+            };
         case user_signup_fail:
         case user_login_fail:
         case user_logout_fail:
         case send_otp_fail:
         case verify_otp_fail:
-        case resend_otp_fail:    
+        case resend_otp_fail:
             return {
                 ...state,
                 loading: false,
@@ -118,60 +118,60 @@ export const user = (state = { user: null }, action) => {
             };
 
         case get_user_fail:
-            return{
+            return {
                 ...state,
-                error:null,
-                loading:false
-            }
-            
-        case user_signup_reset:
-            return{
-                ...state,
-                loading:false,
-                sucess:false
+                error: null,
+                loading: false
             }
 
-            case user_login_reset:
-                return{
-                    ...state,
-                    loading:false,
-                    isLogin:false
-                }
-                case user_logout_reset:
-                    return{
-                        ...state,
-                        loading:false,
-                        isLogout:false
-                    }
-            case send_otp_reset:{
-                return{
-                    ...state,
-                    loading:false,
-                    isSendOtp:false
-                }
-            }
-            
-            case resend_otp_reset:{
-                return{
-                    ...state,
-                    loading:false,
-                    isResendOtp:false
-                }
-            } 
-            
-            case verify_otp_reset:{
-                return{
-                    ...state,
-                    loading:false,
-                    isVerifiedOtp:false
-                }
-            } 
-        case clear_errors:
-            return{
+        case user_signup_reset:
+            return {
                 ...state,
-                loading:false,
-                error:null
-            }    
+                loading: false,
+                sucess: false
+            }
+
+        case user_login_reset:
+            return {
+                ...state,
+                loading: false,
+                isLogin: false
+            }
+        case user_logout_reset:
+            return {
+                ...state,
+                loading: false,
+                isLogout: false
+            }
+        case send_otp_reset: {
+            return {
+                ...state,
+                loading: false,
+                isSendOtp: false
+            }
+        }
+
+        case resend_otp_reset: {
+            return {
+                ...state,
+                loading: false,
+                isResendOtp: false
+            }
+        }
+
+        case verify_otp_reset: {
+            return {
+                ...state,
+                loading: false,
+                isVerifiedOtp: false
+            }
+        }
+        case clear_errors:
+            return {
+                ...state,
+                loading: false,
+                error: null
+            }
         default:
             return state;
     }
@@ -201,11 +201,11 @@ export const registred_users = (state = { registred_users: null }, action) => {
                 error: action.payload
             };
         case clear_errors:
-            return{
+            return {
                 ...state,
-                loading:false,
-                error:null
-            }    
+                loading: false,
+                error: null
+            }
         default:
             return state;
     }
@@ -217,7 +217,7 @@ export const allow_user = (state = { allow_user: null }, action) => {
 
     switch (action.type) {
         case allow_user_request:
-            case delete_user_request:
+        case delete_user_request:
             return {
                 ...state,
                 loading2: true
@@ -228,39 +228,39 @@ export const allow_user = (state = { allow_user: null }, action) => {
                 loading2: false,
                 isAllowed: action.payload
             };
-            case delete_user_sucess:
-                return {
-                    ...state,
-                    loading2: false,
-                    isDeleted: action.payload
-                };
+        case delete_user_sucess:
+            return {
+                ...state,
+                loading2: false,
+                isDeleted: action.payload
+            };
 
         case allow_user_fail:
-            case delete_user_fail:
+        case delete_user_fail:
             return {
                 ...state,
                 loading2: false,
                 error: action.payload
             };
         case allow_user_reset:
-            return{
+            return {
                 ...state,
-                loading2:false,
-                isAllowed:false
-            }   
+                loading2: false,
+                isAllowed: false
+            }
 
-            case delete_user_reset:
-                return{
-                    ...state,
-                    loading2:false,
-                    isDeleted:false
-                } 
-        case clear_errors:
-            return{
+        case delete_user_reset:
+            return {
                 ...state,
-                loading2:false,
-                error:null
-            }    
+                loading2: false,
+                isDeleted: false
+            }
+        case clear_errors:
+            return {
+                ...state,
+                loading2: false,
+                error: null
+            }
         default:
             return state;
     }

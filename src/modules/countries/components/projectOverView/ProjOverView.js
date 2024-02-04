@@ -148,7 +148,7 @@ const ProjOverView = () => {
                       // `Guaranteed Generation: ${plantDetail?.data2.guaranteedGenereation}`,
                       // `Tilt: ${plantDetail?.data2.tiltAngle}`
                       `Datasheet: Modules, Inverter, Transformer`,
-                      `Cabel: Cabel Details`,
+                      `Cable: Cable Details`,
                       `SLD: DC SLD and AC SLD`
                     ]}
                     data={plantDetail?.data2}
@@ -243,7 +243,7 @@ const ProjOverView = () => {
                 }}
               >
 
-                <Grid container lg={11.7}
+                <Grid container lg={11.8}
                   style={{
                     backgroundColor: "white",
                     boxSizing: "border-box",

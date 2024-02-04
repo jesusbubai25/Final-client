@@ -106,7 +106,6 @@ const AsBuiltDiagram = () => {
     })
     const selectPathHandler = (name) => {
         let data = pathData.find(e => e.name === name)
-        console.log("data is ", data)
         setDocumentName({ ...documentName, name: data.lname, type: data.type })
         setPath(name)
     }
@@ -125,7 +124,6 @@ const AsBuiltDiagram = () => {
 
 
     const changeLinkHandler = (name) => {
-        console.log(name)
         let newdata = {};
         for (let i in checkedData) {
             if (name === i) newdata[name] = true;
@@ -136,7 +134,6 @@ const AsBuiltDiagram = () => {
 
     const downloadPdf = async (path) => {
 
-        console.log("path is ", path)
         await fetch(path).then((response) => {
             response.blob().then((blob) => {
                 const fileURL = window.URL.createObjectURL(blob);
@@ -250,7 +247,7 @@ const AsBuiltDiagram = () => {
                             }
                             }
 
-                        >O&M Cantact</Link>
+                        >O&M Contract</Link>
 
                     </ul>
                 </div>
