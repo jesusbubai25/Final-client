@@ -19,7 +19,7 @@ const ProjOverView = () => {
     showAsbuiltDetails: false,
     showSMB: false,
   });
-  const { plantDetail, error, loading } = useSelector(state => state.plantDetail)
+  const { plantDetail,  loading } = useSelector(state => state.plantDetail)
 
   const refReset = useRef(null)
   const refForGeneralDetails = useRef(null);
@@ -70,7 +70,7 @@ const ProjOverView = () => {
                 <img
                   src={ProjPic}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  alt="Project-picture"
+                  alt="Project-Overview"
                 />
               </div>
             </Grid>

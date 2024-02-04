@@ -26,79 +26,79 @@ const Diagonistic = () => {
         {/* <ProjectDetailsHeader/> */}
         <CountryHeader2 />
       </div>
-      {location?.pathname == PageURL.INDIA_DIAGONISTIC_DETAILED && <Detailed3
+      {location?.pathname === PageURL.INDIA_DIAGONISTIC_DETAILED && <Detailed3
      />}
-      {/* {location?.pathname == PageURL.INDIA_LOSS_FLOW && <LossFlow />} */}
-      {location?.pathname == PageURL.INDIA_LOSS_FLOW && <LossFlow2 />}
-      {location?.pathname == PageURL.INDIA_INVERTER_EFFICIENCY && <InverterEfficiency />
+      {/* {location?.pathname === PageURL.INDIA_LOSS_FLOW && <LossFlow />} */}
+      {location?.pathname === PageURL.INDIA_LOSS_FLOW && <LossFlow2 />}
+      {location?.pathname === PageURL.INDIA_INVERTER_EFFICIENCY && <InverterEfficiency />
       
       }
-      {location?.pathname == PageURL.PROJECT_DETAILS && <ProjectDetailBody />}
-      {location?.pathname == PageURL.INDIA_GEN_SUMMARY && <GenOverView2 />}
-      {location?.pathname == PageURL.INDIA_PROJ_OVERVIEW && <ProjOverView />}
-      {location?.pathname == PageURL.INDIA_PRES_MODEL_Loss_Flow && <PresCripModel />}
-      {location?.pathname == PageURL.INDIA_PRES_MODEL_Fault_Tree && <FaultTree />}
-      {location?.pathname == PageURL.INDIA_INVERTER1_HEATMAP_DIAGRAM && <HeatmapInverter1 />}
-      {location?.pathname == PageURL.INDIA_INVERTER2_HEATMAP_DIAGRAM && <HeatmapInverter1 />}
-      {location?.pathname == PageURL.INDIA_INVERTER3_HEATMAP_DIAGRAM && <HeatmapInverter1 />}
-      {location?.pathname == PageURL.INDIA_INVERTER4_HEATMAP_DIAGRAM && <HeatmapInverter1/>}
+      {location?.pathname === PageURL.PROJECT_DETAILS && <ProjectDetailBody />}
+      {location?.pathname === PageURL.INDIA_GEN_SUMMARY && <GenOverView2 />}
+      {location?.pathname === PageURL.INDIA_PROJ_OVERVIEW && <ProjOverView />}
+      {location?.pathname === PageURL.INDIA_PRES_MODEL_Loss_Flow && <PresCripModel />}
+      {location?.pathname === PageURL.INDIA_PRES_MODEL_Fault_Tree && <FaultTree />}
+      {location?.pathname === PageURL.INDIA_INVERTER1_HEATMAP_DIAGRAM && <HeatmapInverter1 />}
+      {location?.pathname === PageURL.INDIA_INVERTER2_HEATMAP_DIAGRAM && <HeatmapInverter1 />}
+      {location?.pathname === PageURL.INDIA_INVERTER3_HEATMAP_DIAGRAM && <HeatmapInverter1 />}
+      {location?.pathname === PageURL.INDIA_INVERTER4_HEATMAP_DIAGRAM && <HeatmapInverter1/>}
 
 
       {
         (
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB1 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB2 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB3 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB4 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB5 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB6 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB7 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB8 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB9 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB10 ||
-          location?.pathname == PageURL.INDIA_INVERTER1_SCB_SMB11 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB1 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB2 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB3 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB4 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB5 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB6 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB7 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB8 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB9 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB10 ||
+          location?.pathname === PageURL.INDIA_INVERTER1_SCB_SMB11 ||
 
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB1 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB2 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB3 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB4 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB5 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB6 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB7 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB8 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB9 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB10 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB11  ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB11 ||
-          location?.pathname == PageURL.INDIA_INVERTER2_SCB_SMB12 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB1 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB2 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB3 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB4 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB5 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB6 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB7 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB8 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB9 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB10 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB11  ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB11 ||
+          location?.pathname === PageURL.INDIA_INVERTER2_SCB_SMB12 ||
 
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB1 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB2 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB3 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB4 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB5 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB6 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB7 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB8 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB9 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB10 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB11  ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB11 ||
-          location?.pathname == PageURL.INDIA_INVERTER3_SCB_SMB12 || 
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB1 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB2 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB3 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB4 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB5 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB6 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB7 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB8 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB9 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB10 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB11  ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB11 ||
+          location?.pathname === PageURL.INDIA_INVERTER3_SCB_SMB12 || 
 
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB1 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB2 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB3 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB4 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB5 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB6 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB7 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB8 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB9 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB10 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB11  ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB11 ||
-          location?.pathname == PageURL.INDIA_INVERTER4_SCB_SMB12 
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB1 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB2 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB3 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB4 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB5 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB6 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB7 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB8 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB9 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB10 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB11  ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB11 ||
+          location?.pathname === PageURL.INDIA_INVERTER4_SCB_SMB12 
 
 
 

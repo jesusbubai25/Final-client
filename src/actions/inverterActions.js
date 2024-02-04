@@ -12,18 +12,18 @@ import axios from "axios"
 //     withCredentials: true
 // })
 
-axios.create({
-    baseURL: "http://195.35.21.41:8000",
-    withCredentials: true
-})
+// axios.create({
+//     baseURL: "http://195.35.21.41:8000",
+//     withCredentials: true
+// })
 
 
 export const Inverter_Efficiency = () => async (dispatch) => {
     try {
         dispatch({ type: inverter_efficiency_request })
 
-        const { data } = await axios.get("/inverter-efficiency");
-        // const { data } = await axios.get("http://195.35.21.41:8000/inverter-efficiency");
+        // const { data } = await axios.get("/inverter-efficiency");
+        const { data } = await axios.get("http://195.35.21.41:8000/inverter-efficiency");
         dispatch({ type: inverter_efficiency_sucess, payload: data.newdata })
 
 
@@ -37,8 +37,8 @@ export const All_Inverter_Efficiency_Monthly = () => async (dispatch) => {
     try {
         dispatch({ type: all_inverter_efficiency_request })
 
-        const { data } = await axios.get("/inverter-efficiency-monthly");
-        // const { data } = await axios.get("http://195.35.21.41:8000/inverter-efficiency-monthly");
+        // const { data } = await axios.get("/inverter-efficiency-monthly");
+        const { data } = await axios.get("http://195.35.21.41:8000/inverter-efficiency-monthly");
 
         dispatch({ type: all_inverter_efficiency_sucess, payload: data.newresult })
 
@@ -53,8 +53,8 @@ export const normalizedEnergyDetails = () => async (dispatch) => {
     try {
         dispatch({ type: energy_monthly_request })
 
-        const { data } = await axios.get("/normalizedEnergyDetails");
-        // const { data } = await axios.get("http://195.35.21.41:8000/normalizedEnergyDetails");
+        // const { data } = await axios.get("/normalizedEnergyDetails");
+        const { data } = await axios.get("http://195.35.21.41:8000/normalizedEnergyDetails");
         dispatch({ type: energy_monthly_sucess, payload: data })
 
 
@@ -67,8 +67,8 @@ export const GHI_GTI_data_action = () => async (dispatch) => {
     try {
         dispatch({ type: GHI_GTI_data_request })
 
-        const { data } = await axios.get("/GHI-GTI-data");
-        // const { data } = await axios.get("http://195.35.21.41:8000/GHI-GTI-data");
+        // const { data } = await axios.get("/GHI-GTI-data");
+        const { data } = await axios.get("http://195.35.21.41:8000/GHI-GTI-data");
         dispatch({ type: GHI_GTI_data_sucess, payload: data })
 
     } catch (error) {
@@ -80,8 +80,8 @@ export const powerPlantDetail = () => async (dispatch) => {
     try {
         dispatch({ type: powerplant_details_request })
 
-        const { data } = await axios.get("/powerPlantDetails");
-        // const { data } = await axios.get("http://195.35.21.41:8000/powerPlantDetails");
+        // const { data } = await axios.get("/powerPlantDetails");
+        const { data } = await axios.get("http://195.35.21.41:8000/powerPlantDetails");
         dispatch({ type: powerplant_details_sucess, payload: { data1: data.result, data2: data.result2, inverter_details: data.result3 } })
 
     } catch (error) {
@@ -93,8 +93,8 @@ export const InverterSmbYearlyLoss = (inverter, smb) => async (dispatch) => {
     try {
         dispatch({ type: inverter_smb_yearly_loss_request })
 
-        const { data } = await axios.get("/inverter-smb-yearly-loss");
-        // const { data } = await axios.get("http://195.35.21.41:8000/inverter-smb-yearly-loss");
+        // const { data } = await axios.get("/inverter-smb-yearly-loss");
+        const { data } = await axios.get("http://195.35.21.41:8000/inverter-smb-yearly-loss");
         const newdata = [];
         const keys = Object.keys(data?.result?.[inverter - 1]) || [];
         const values = Object.values(data?.result?.[inverter - 1]) || [];
@@ -118,8 +118,8 @@ export const InverterSmbMonthlyLoss = (inverter, smb) => async (dispatch) => {
     try {
         dispatch({ type: inverter_smb_monthly_loss_request })
 
-        const { data } = await axios.get(`/inverter-smb-monthly-loss/${inverter}`);
-        // const { data } = await axios.get(`http://195.35.21.41:8000/inverter-smb-monthly-loss/${inverter}`);
+        // const { data } = await axios.get(`/inverter-smb-monthly-loss/${inverter}`);
+        const { data } = await axios.get(`http://195.35.21.41:8000/inverter-smb-monthly-loss/${inverter}`);
         const cpyData = data?.result || [];
         const finalResult = [];
         let minValue = Infinity, maxValue = -Infinity
@@ -149,8 +149,8 @@ export const HeatMapData = (inverter) => async (dispatch) => {
     try {
         dispatch({ type: heatmap_data_request })
 
-        const { data } = await axios.get(`/inverter-smb-monthly-loss/${inverter}`);
-        // const { data } = await axios.get(`http://195.35.21.41:8000/inverter-smb-monthly-loss/${inverter}`);
+        // const { data } = await axios.get(`/inverter-smb-monthly-loss/${inverter}`);
+        const { data } = await axios.get(`http://195.35.21.41:8000/inverter-smb-monthly-loss/${inverter}`);
         const cpyData = data?.result || [];
         const finalResult = [];
 

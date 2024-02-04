@@ -7,10 +7,9 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { useSelector } from "react-redux";
-import { colors1, colors2 } from "../../../../colors/color";
 
 const SmbDetails = () => {
-    const { plantDetail, error, loading } = useSelector(state => state.plantDetail)
+    const { plantDetail } = useSelector(state => state.plantDetail)
     useEffect(() => {
     }, [])
 
@@ -57,13 +56,13 @@ const SmbDetails = () => {
                         {plantDetail?.data1?.map((value, index, arr) => (
                             <TableRow key={index}>
                                 {(index === 0 && <TableCell align="left">{value.blockNo}</TableCell>) ||
-                                    (index < plantDetail?.data1?.length && arr[index].blockNo != arr[index - 1].blockNo && <TableCell align="left">{arr[index].blockNo}</TableCell>) ||
+                                    (index < plantDetail?.data1?.length && arr[index].blockNo !== arr[index - 1].blockNo && <TableCell align="left">{arr[index].blockNo}</TableCell>) ||
                                     <TableCell align="left">
                                         <p></p>
                                     </TableCell>
                                 }
                                 {(index === 0 && <TableCell align="center">{value.inverterNo}</TableCell>) ||
-                                    (index < plantDetail?.data1?.length && arr[index].inverterNo != arr[index - 1].inverterNo && <TableCell align="center">{arr[index].inverterNo}</TableCell>) ||
+                                    (index < plantDetail?.data1?.length && arr[index].inverterNo !== arr[index - 1].inverterNo && <TableCell align="center">{arr[index].inverterNo}</TableCell>) ||
                                     <TableCell align="center">
                                         <p></p>
                                     </TableCell>

@@ -13,10 +13,10 @@ import {
 //     withCredentials: true
 // })
 
-axios.create({
-    baseURL: "http://195.35.21.41:8000",
-    withCredentials: true
-})
+// axios.create({
+//     baseURL: "http://195.35.21.41:8000",
+//     withCredentials: true
+// })
 
 export const userSignup = (data) => async (dispatch) => {
     const {
@@ -29,8 +29,8 @@ export const userSignup = (data) => async (dispatch) => {
     try {
         dispatch({ type: user_signup_request })
 
-        const { data } = await axios.post(`/sign-up`,
-        // const { data } = await axios.post(`http://195.35.21.41:8000/sign-up`,
+        // const { data } = await axios.post(`/sign-up`,
+        const { data } = await axios.post(`http://195.35.21.41:8000/sign-up`,
             { firstName, lastName, email, phoneNumber, userLevel: userLevel },{withCredentials:true}
         );
         dispatch({ type: user_signup_sucess, payload: data.sucess })
@@ -48,8 +48,8 @@ export const userLogin = (data) => async (dispatch) => {
     try {
         dispatch({ type: user_login_request })
 
-        const { data } = await axios.post(`/login`,
-        // const { data } = await axios.post(`http://195.35.21.41:8000/login`,
+        // const { data } = await axios.post(`/login`,
+        const { data } = await axios.post(`http://195.35.21.41:8000/login`,
             { userName, password }, { withCredentials: true }
         );
         dispatch({ type: user_login_sucess, payload: { user: data.user, auth_token: data.auth_token } })
@@ -68,12 +68,8 @@ export const userLogout = () => async (dispatch) => {
         //     localStorage.removeItem("auth_token")
         //     dispatch({ type: user_logout_sucess, payload: true })
         // } else dispatch({ type: user_logout_fail, payload: "User not found" })
-        const { data } = await axios.get(`/logout`);
-        // const { data } = await axios.get(`http://195.35.21.41:8000/logout`,{withCredentials:true});
+        const { data } = await axios.get(`http://195.35.21.41:8000/logout`,{withCredentials:true});
             dispatch({ type: user_logout_sucess, payload: data.sucess })
-
-
-
     } catch (error) {
         dispatch({ type: user_logout_fail, payload: error?.response?.data?.error || error?.message })
     }
@@ -84,8 +80,8 @@ export const getUser = () => async (dispatch) => {
     try {
 
         dispatch({ type: get_user_request })
-        const { data } = await axios.get(`/getuser`,
-        // const { data } = await axios.get(`http://195.35.21.41:8000/getuser`,
+        // const { data } = await axios.get(`/getuser`,
+        const { data } = await axios.get(`http://195.35.21.41:8000/getuser`,
         {withCredentials:true}
         );
         dispatch({ type: get_user_sucess, payload: data.user })
@@ -100,8 +96,8 @@ export const registredUsers = () => async (dispatch) => {
     try {
         dispatch({ type: registerd_user_request })
 
-        const { data } = await axios.get(`/admin/registered-users`);
-        // const { data } = await axios.get(`http://195.35.21.41:8000/admin/registered-users`,{withCredentials:true});
+        // const { data } = await axios.get(`/admin/registered-users`);
+        const { data } = await axios.get(`http://195.35.21.41:8000/admin/registered-users`,{withCredentials:true});
         dispatch({ type: registerd_user_sucess, payload: data.users })
 
     } catch (error) {
@@ -113,8 +109,8 @@ export const allowUser = (email_ID) => async (dispatch) => {
     try {
         dispatch({ type: allow_user_request })
 
-        const { data } = await axios.post(`/admin/allow-user`,
-        // const { data } = await axios.post(`http://195.35.21.41:8000/admin/allow-user`,
+        // const { data } = await axios.post(`/admin/allow-user`,
+        const { data } = await axios.post(`http://195.35.21.41:8000/admin/allow-user`,
             { email_ID },{withCredentials:true}
         );
         dispatch({ type: allow_user_sucess, payload: data.sucess })
@@ -129,8 +125,8 @@ export const deleteUser = (email_ID) => async (dispatch) => {
     try {
         dispatch({ type: delete_user_request })
 
-        const { data } = await axios.delete(`/admin/delete-user/${email_ID}`);
-        // const { data } = await axios.delete(`http://195.35.21.41:8000/admin/delete-user/${email_ID}`,{withCredentials:true});
+        // const { data } = await axios.delete(`/admin/delete-user/${email_ID}`);
+        const { data } = await axios.delete(`http://195.35.21.41:8000/admin/delete-user/${email_ID}`,{withCredentials:true});
         dispatch({ type: delete_user_sucess, payload: data.sucess })
 
     } catch (error) {
@@ -143,8 +139,8 @@ export const sendOtp = (email_ID) => async (dispatch) => {
     try {
         dispatch({ type: send_otp_request })
 
-        const { data } = await axios.post(`/send-otp`, { email_ID }, { withCredentials: true });
-        // const { data } = await axios.post(`http://195.35.21.41:8000/send-otp`, { email_ID },{withCredentials:true});
+        // const { data } = await axios.post(`/send-otp`, { email_ID }, { withCredentials: true });
+        const { data } = await axios.post(`http://195.35.21.41:8000/send-otp`, { email_ID },{withCredentials:true});
         dispatch({ type: send_otp_sucess, payload: data.sucess })
 
     } catch (error) {
@@ -156,8 +152,8 @@ export const ResendOtp = (email_ID) => async (dispatch) => {
     try {
         dispatch({ type: resend_otp_request })
 
-        const { data } = await axios.post(`/resend-otp`, { email_ID }, { withCredentials: true });
-        // const { data } = await axios.post(`http://195.35.21.41:8000/resend-otp`, { email_ID },{withCredentials:true});
+        // const { data } = await axios.post(`/resend-otp`, { email_ID }, { withCredentials: true });
+        const { data } = await axios.post(`http://195.35.21.41:8000/resend-otp`, { email_ID },{withCredentials:true});
         dispatch({ type: resend_otp_sucess, payload: data.sucess })
 
     } catch (error) {
@@ -170,8 +166,8 @@ export const verifyOtp = (otp, email_ID) => async (dispatch) => {
     try {
         dispatch({ type: verify_otp_request })
 
-        const { data } = await axios.post(`/verify-otp`, { otp, email_ID }, { withCredentials: true });
-        // const { data } = await axios.post(`http://195.35.21.41:8000/verify-otp`, { otp, email_ID },{withCredentials:true});
+        // const { data } = await axios.post(`/verify-otp`, { otp, email_ID }, { withCredentials: true });
+        const { data } = await axios.post(`http://195.35.21.41:8000/verify-otp`, { otp, email_ID },{withCredentials:true});
         dispatch({ type: verify_otp_sucess, payload: data.sucess })
 
     } catch (error) {
